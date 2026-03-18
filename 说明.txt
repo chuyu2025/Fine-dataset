@@ -1,0 +1,10 @@
+这是一个大语言模型微调训练的数据库，请你根据我对这些数据的简单介绍帮我为该数据库生成一个readme文件。
+filter_rata_0_3 到 filter_rata_2_2 中的数据是对不同晶格常数的初始声谷霍尔绝缘体数据进行筛选，初始数据为：
+“TI_data_com_flot_xxx.json”，“TI_data_com_str_xxx.json”，“TI_data_sim_flot_xxx.json”，“TI_data_sim_str_xxx.json”
+这里的数据的区别是，flot代表该数据中用浮点数储存数据，str表示用字符串储存，com表示储存的是声谷霍尔绝缘体结构的
+完整坐标点，sim表示六分之一坐标。filter-data-num.py是一个数据筛选程序，用于对数据进行筛选得到筛选后的json文件如：
+filter_data_com_flot_0_3.json...
+
+all_filter_sim_str到all_filter_com_flot，分别是将筛选后的数据汇总。
+Training and test datasets中的XYQX-Train.json是用于Designer-LLM微调训练的指令数据集。
+XYQX-test.json是测试数据集。
